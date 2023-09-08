@@ -1,7 +1,8 @@
 import { RouteContext } from "$fresh/server.ts";
+import { asset } from "$fresh/runtime.ts";
 
 const loadFooValue = () => {
-  return "redirect";
+  return "a";
 };
 
 export default async function MyPage(_req: Request, ctx: RouteContext) {
@@ -20,5 +21,12 @@ export default async function MyPage(_req: Request, ctx: RouteContext) {
     });
   }
 
-  return <p>foo is: {value}</p>;
+  return (
+    <div>
+      <p>foo is: {value}</p>
+      <p>
+        <a href={asset("/brochure.pdf")}>View brochure</a>
+      </p>
+    </div>
+  );
 }
