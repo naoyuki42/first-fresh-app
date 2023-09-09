@@ -20,8 +20,9 @@ import * as $14 from "./routes/html.tsx";
 import * as $15 from "./routes/index.tsx";
 import * as $16 from "./routes/myHandler.ts";
 import * as $17 from "./routes/page.tsx";
-import * as $18 from "./routes/search.tsx";
-import * as $19 from "./routes/subscribe.tsx";
+import * as $18 from "./routes/project/[id].tsx";
+import * as $19 from "./routes/search.tsx";
+import * as $20 from "./routes/subscribe.tsx";
 import * as $$0 from "./islands/Countdown.tsx";
 import * as $$1 from "./islands/Counter.tsx";
 import * as $$2 from "./islands/my-island.tsx";
@@ -47,8 +48,9 @@ const manifest = {
     "./routes/index.tsx": $15,
     "./routes/myHandler.ts": $16,
     "./routes/page.tsx": $17,
-    "./routes/search.tsx": $18,
-    "./routes/subscribe.tsx": $19,
+    "./routes/project/[id].tsx": $18,
+    "./routes/search.tsx": $19,
+    "./routes/subscribe.tsx": $20,
   },
   islands: {
     "./islands/Countdown.tsx": $$0,
